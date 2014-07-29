@@ -8,7 +8,7 @@
 	function Storage_set(key, value, expire) {
 		this.data[key] = { 
 			value: value,
-			timeout: setTimeout(Storage_internal_delete, expire, this, key),
+			timeout: expire > 0 ? setTimeout(Storage_internal_delete, expire, this, key) : null,
 		};
 	}
 
@@ -17,9 +17,8 @@
 	}
 
 	function Storage_delete(key) {
-		dataPiece = this.data[key];
-		clearTimeout(dataPiece.timeout);
-		delete dataPiece;
+		clearTimeout(this.data[key].timeout);
+		delete this.data[key];
 	}
 
 	function Storage_purge() {
