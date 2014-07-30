@@ -1,6 +1,21 @@
 {
-  "name": "eph",
+  "name": "eph-storage",
+  "description":"A super simple ephemeral storage engine using Node.js.",
+  "author":"Caleb Everett <calebe@ceverett.me>",
+  "contributors": [{
+  	"name": "Caleb Everett",
+  	"email": "calebe@ceverett.me"
+  }],
   "version": "1.0.0",
+  "main": "eph-storage.js",
+  "repository": {
+  	"type": "git",
+  	"url": "https://github.com/everettcaleb/eph-storage"
+  },
+  "script":{
+  	"start": "node eph-storage.js",
+  	"test": "mocha -R spec"
+  },
   "dependencies": {
     "express": "^4.7.2"
   }
