@@ -12,7 +12,7 @@
   	"type": "git",
   	"url": "https://github.com/everettcaleb/eph-storage"
   },
-  "script":{
+  "scripts":{
   	"start": "node eph-storage.js",
   	"test": "mocha -R spec"
   },
