@@ -17,6 +17,7 @@
   	"test": "mocha -R spec"
   },
   "dependencies": {
-    "express": "^4.7.2"
+    "express": "^4.7.2",
+    "supertest": "^0.13.0"
   }
 }

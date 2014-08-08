@@ -47,4 +47,5 @@
 	}
 
 	exports.run = run;
+	exports.app = app;
 })();
