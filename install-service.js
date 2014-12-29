@@ -4,7 +4,7 @@ var path = require('path');
 // Create a new service object
 var svc = new Service({
   name:'eph-storage',
-  description: 'CORE Ephemeral Storage Engine',
+  description: 'Ephemeral Storage Engine',
   script: path.resolve('.', 'eph-storage.js')
 });
 
